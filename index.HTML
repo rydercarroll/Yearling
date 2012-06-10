@@ -5,16 +5,21 @@
 		<script type="text/javascript" src=" https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
 		<script>
 		 $(document).ready(function() {
+			
+			$('.week').fadeOut();
 			$(function() {
 				$( "#weeksWrapper" ).selectable({
 					selected: function() {$(".ui-selected").draggable(); }
 				});
 			});
 				
-			$( "#createProjectButton" ).click(function() {
+			$("#createProjectButton").click(function() {
 				$("#weeksWrapper .ui-selected").css("background-color","red");
 			});
+			
 						
+			
+		
 		});
         </script>
 		<style type="text/css">
