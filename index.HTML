@@ -6,16 +6,15 @@
 		<script>
 		 $(document).ready(function() {
 			$(function() {
-					$( "#weeksWrapper" ).selectable();
+				$( "#weeksWrapper" ).selectable({
+					selected: function() {$(".ui-selected").draggable(); }
 				});
+			});
 				
 			$( "#createProjectButton" ).click(function() {
 				$("#weeksWrapper .ui-selected").css("background-color","red");
-				$(".ui-selected").draggable();
 			});
-			
-			
-			
+						
 			});
         </script>
 		<style type="text/css">
