@@ -5,32 +5,99 @@
 		<script type="text/javascript" src=" https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
 		<script>
 			$(function() {
-					$( "#selectable" ).selectable();
+					$( "#weeksWrapper" ).selectable();
 				});
         </script>
 		<style type="text/css">
-			#wrapper {width: 500px; background-color: #eee; margin: 100px auto 0 auto; display: block}
-			.month {border-bottom: solid #aaa 1px; height: 25px; padding: 10px;}
-			#selectable .ui-selecting { background: #FECA40; }
-			#selectable .ui-selected { background: #F39814; color: white; }
+			#wrapper {width: 500px; background-color: #eee; margin: 100px auto 0 auto; display: block; background-color: #eee; float: left}
+			#dates {float: left; background-color: #999}
+			#monthNames {float: left; width: 100px; background-color: #888; }
+			#monthNames li {list-style-type: none; margin: 0; padding: 0}
+			#weeksWrapper {width: 200px; margin: 0; padding: 0}
+			.week {height: 20px; width: 20px; float: left; background-color: blue; margin: 0 1 1 0}
+			#projectsWrapper {width: 260px; background: yellow; height: 100px; float: right; padding: 20px}
+			#weeksWrapper .ui-selecting { background: #FECA40; }
+			#weeksWrapper .ui-selected { background: #F39814; color: white; }
 		</style>
 	</head>
 	<body>
 		<div id="wrapper">
-			<ul id="selectable">
-				<li class="month">Jan</li>
-				<li class="month">Feb</li>
-				<li class="month">Mar</li>
-				<li class="month">Apr</li>
-				<li class="month">May</li>
-				<li class="month">Jun</li>
-				<li class="month">Jul</li>
-				<li class="month">Aug</li>
-				<li class="month">Sep</li>
-				<li class="month">Oct</li>
-				<li class="month">Nov</li>
-				<li class="month">Dec</li>
-			</ul>
+			<div id="dates">
+				<div id="monthNames">
+					<ul>
+						<li class="month">Jan</li>
+						<li class="month">Feb</li>
+						<li class="month">Mar</li>
+						<li class="month">Apr</li>
+						<li class="month">May</li>
+						<li class="month">Jun</li>
+						<li class="month">Jul</li>
+						<li class="month">Aug</li>
+						<li class="month">Sep</li>
+						<li class="month">Oct</li>
+						<li class="month">Nov</li>
+						<li class="month">Dec</li>
+						
+					</ul>
+				</div>
+				<div id="weeksWrapper">
+					<ul>
+						<li class="week"></li>
+						<li class="week"></li>
+						<li class="week"></li>
+						<li class="week"></li>
+						<li class="week"></li>
+						<li class="week"></li>
+						<li class="week"></li>
+						<li class="week"></li>
+						<li class="week"></li>
+						<li class="week"></li>
+						<li class="week"></li>
+						<li class="week"></li>
+						<li class="week"></li>
+						<li class="week"></li>
+						<li class="week"></li>
+						<li class="week"></li>
+						<li class="week"></li>
+						<li class="week"></li>
+						<li class="week"></li>
+						<li class="week"></li>
+						<li class="week"></li>
+						<li class="week"></li>
+						<li class="week"></li>
+						<li class="week"></li>
+						<li class="week"></li>
+						<li class="week"></li>
+						<li class="week"></li>
+						<li class="week"></li>
+						<li class="week"></li>
+						<li class="week"></li>
+						<li class="week"></li>
+						<li class="week"></li>
+						<li class="week"></li>
+						<li class="week"></li>
+						<li class="week"></li>
+						<li class="week"></li>
+						<li class="week"></li>
+						<li class="week"></li>
+						<li class="week"></li>
+						<li class="week"></li>
+						<li class="week"></li>
+						<li class="week"></li>
+						<li class="week"></li>
+						<li class="week"></li>
+						<li class="week"></li>
+						<li class="week"></li>
+						<li class="week"></li>
+						<li class="week"></li>
+					</ul>
+				</div>
+			
+				
+			</div>
+				<div id="projectsWrapper">
+				Project List
+				</div>
 		</div>
 	</body> 
 </html>
