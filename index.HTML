@@ -5,25 +5,26 @@
 		<script type="text/javascript" src=" https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
 		<script>
 		 $(document).ready(function() {
-			
-			$('.week').fadeOut();
+
 			$(function() {
-				$( "#weeksWrapper" ).selectable({
-					selected: function() {$(".ui-selected").draggable(); }
-				});
-			});
+				$( "#weeksWrapper" ).selectable();
+			});	
 				
 			$("#createProjectButton").click(function() {
-				$("#weeksWrapper .ui-selected").css("background-color","red");
+				 s=prompt('Enter your name','Name'),
+			 	$('#projectsWrapper').append('<div class="project"> 	' + s  + '<span class="delete">X</span></div>'),
+			 	$('.project').draggable();
+			 	$('.delete').click(function() { 
+					$(this).parent().fadeOut();
+			 	
+				});
 			});
-			
-						
-			
-		
 		});
         </script>
 		<style type="text/css">
 			#wrapperOuter {width: 530px; background-color: #eee; margin: 100px auto 0 auto; }
+			.project {display: block; background-color: #eee; padding: 2px; margin: 2px}
+			.delete {background-color: blue; float: right; cursor: pointer}
 			#wrapperInner {display: block; background-color: #eee; float: left}
 			#dates {float: left; background-color: #999}
 			#monthNames {float: left; width: 80px; background-color: #888; }
