@@ -6,8 +6,9 @@
 		<script>
 		 $(document).ready(function() {
 			
+			$('.week').fadeOut();
 			$(function() {
-				$( ".month" ).selectable({
+				$( "#weeksWrapper" ).selectable({
 					selected: function() {$(".ui-selected").draggable(); }
 				});
 			});
@@ -16,6 +17,9 @@
 				$("#weeksWrapper .ui-selected").css("background-color","red");
 			});
 			
+						
+			
+		
 		});
         </script>
 		<style type="text/css">
@@ -28,10 +32,8 @@
 			#weeksWrapper ul{width: 170px; margin: 0; padding: 10px}
 			.week {height: 24px; width: 24px; float: left; background-color: blue; margin: 0 1 1 0}
 			#projectsWrapper {width: 260px; background: yellow; height: 100px; float: right; padding: 20px}
-			.month ul {margin: 0; padding: 0; float: left; list-style: none}
-			.month u li{margin: 0; padding: 0; }
-			.month .ui-selecting { background: #FECA40; }
-			.month .ui-selected { background: #F39814; color: white; }
+			#weeksWrapper .ui-selecting { background: #FECA40; }
+			#weeksWrapper .ui-selected { background: #F39814; color: white; }
 			#newClass .ui-selecting { background: green; }
 			#newClass .ui-selected { background: #6e542f; color: white; }
 			#createProjectButton {background: blue; padding: 5px; color: white}
@@ -60,92 +62,54 @@
 					</div>
 					<div id="weeksWrapper">
 						<ul>
-							<li>
-								<ul  class="month">
-									<li class="week"></li>
-									<li class="week"></li>
-									<li class="week"></li>
-									<li class="week"></li>
-								</ul>
-							</li>
-							<li>
-								<ul  class="month">
-									<li class="week"></li>
-									<li class="week"></li>
-									<li class="week"></li>
-									<li class="week"></li>
-								</ul>
-							</li>							<li>
-								<ul  class="month">
-									<li class="week"></li>
-									<li class="week"></li>
-									<li class="week"></li>
-									<li class="week"></li>
-								</ul>
-							</li>							<li>
-								<ul  class="month">
-									<li class="week"></li>
-									<li class="week"></li>
-									<li class="week"></li>
-									<li class="week"></li>
-								</ul>
-							</li>							<li>
-								<ul  class="month">
-									<li class="week"></li>
-									<li class="week"></li>
-									<li class="week"></li>
-									<li class="week"></li>
-								</ul>
-							</li>							<li>
-								<ul  class="month">
-									<li class="week"></li>
-									<li class="week"></li>
-									<li class="week"></li>
-									<li class="week"></li>
-								</ul>
-							</li>							<li>
-								<ul  class="month">
-									<li class="week"></li>
-									<li class="week"></li>
-									<li class="week"></li>
-									<li class="week"></li>
-								</ul>
-							</li>							<li>
-								<ul  class="month">
-									<li class="week"></li>
-									<li class="week"></li>
-									<li class="week"></li>
-									<li class="week"></li>
-								</ul>
-							</li>							<li>
-								<ul  class="month">
-									<li class="week"></li>
-									<li class="week"></li>
-									<li class="week"></li>
-									<li class="week"></li>
-								</ul>
-							</li>							<li>
-								<ul  class="month">
-									<li class="week"></li>
-									<li class="week"></li>
-									<li class="week"></li>
-									<li class="week"></li>
-								</ul>
-							</li>							<li>
-								<ul  class="month">
-									<li class="week"></li>
-									<li class="week"></li>
-									<li class="week"></li>
-									<li class="week"></li>
-								</ul>
-							</li>							<li>
-								<ul  class="month">
-									<li class="week"></li>
-									<li class="week"></li>
-									<li class="week"></li>
-									<li class="week"></li>
-								</ul>
-							</li>
+							<li class="week"></li>
+							<li class="week"></li>
+							<li class="week"></li>
+							<li class="week"></li>
+							<li class="week"></li>
+							<li class="week"></li>
+							<li class="week"></li>
+							<li class="week"></li>
+							<li class="week"></li>
+							<li class="week"></li>
+							<li class="week"></li>
+							<li class="week"></li>
+							<li class="week"></li>
+							<li class="week"></li>
+							<li class="week"></li>
+							<li class="week"></li>
+							<li class="week"></li>
+							<li class="week"></li>
+							<li class="week"></li>
+							<li class="week"></li>
+							<li class="week"></li>
+							<li class="week"></li>
+							<li class="week"></li>
+							<li class="week"></li>
+							<li class="week"></li>
+							<li class="week"></li>
+							<li class="week"></li>
+							<li class="week"></li>
+							<li class="week"></li>
+							<li class="week"></li>
+							<li class="week"></li>
+							<li class="week"></li>
+							<li class="week"></li>
+							<li class="week"></li>
+							<li class="week"></li>
+							<li class="week"></li>
+							<li class="week"></li>
+							<li class="week"></li>
+							<li class="week"></li>
+							<li class="week"></li>
+							<li class="week"></li>
+							<li class="week"></li>
+							<li class="week"></li>
+							<li class="week"></li>
+							<li class="week"></li>
+							<li class="week"></li>
+							<li class="week"></li>
+							<li class="week"></li>
 						</ul>
 					</div>
 				
